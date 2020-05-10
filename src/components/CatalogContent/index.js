@@ -5,7 +5,7 @@ import * as Styled from "./styled";
 
 export default ({ products }) => {
   const [currPage, setCurrPage] = useState(0);
-  const itemsPerPage = 4;
+  const itemsPerPage = 3;
   const handlePrev = () => setCurrPage((prevState) => prevState - 1);
   const handleNext = () => setCurrPage((prevState) => prevState + 1);
 
