@@ -1,0 +1,40 @@
+{
+  "name": "danceme",
+  "description": "Danceme: clothes and shoes for dancing and gymnastics",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Pavel Yarakhovich <pavel.yarri@gmail.com>",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.19.1",
+    "gatsby-image": "^2.0.13",
+    "gatsby-paginate": "^1.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-styled-components": "^3.3.0",
+    "gatsby-plugin-transition-link": "^1.18.0",
+    "gatsby-source-contentful": "^2.1.78",
+    "gatsby-transformer-remark": "^2.1.6",
+    "gh-pages": "^2.0.1",
+    "gsap": "^3.2.6",
+    "lodash": "^4.17.11",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^5.1.0"
+  },
+  "keywords": [
+    "gatsby",
+    "contentful",
+    "danceme"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "heroku-postbuild": "gatsby build",
+    "serve": "gatsby serve",
+    "setup": "npm install --no-save contentful-import yargs-parser axios chalk && node ./setup.js"
+  }
+}
