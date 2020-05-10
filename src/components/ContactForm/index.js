@@ -26,7 +26,7 @@ const ContactForm = memo(() => {
       data: new FormData(form)
     })
       .then(r => {
-        handleServerResponse(true, "Ваше сообщение отправлено!", form);
+        handleServerResponse(true, "Ваше сообщение отправлено", form);
       })
       .catch(r => {
         handleServerResponse(false, r.response.data.error, form);
