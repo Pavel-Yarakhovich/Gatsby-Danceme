@@ -7,7 +7,6 @@ import CatalogContent from "../components/CatalogContent";
 import MainBg from "../images/catalog_bg.jpg";
 import styled from "styled-components";
 import Navigation from "../components/Navigation";
-import ScrollToTop from "../components/ScrollToTop";
 import Filter from "../components/Filter";
 
 class CatalogIndex extends React.Component {
@@ -60,7 +59,6 @@ class CatalogIndex extends React.Component {
           <HeaderUnderline />
           <CatalogContent products={this.state.filteredProducts} />
         </Page>
-        <ScrollToTop />
       </Layout>
     );
   }

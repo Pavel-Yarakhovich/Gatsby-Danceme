@@ -10,7 +10,6 @@ import Illustration from "../components/Illustration";
 import Contacts from "../components/Contacts";
 import Navigation from "../components/Navigation";
 import MainInfo from "../components/MainInfo";
-import ScrollToTop from "../components/ScrollToTop";
 
 class RootIndex extends React.Component {
   render() {
@@ -39,7 +38,6 @@ class RootIndex extends React.Component {
           <Delivery id="delivery" options={deliveryOptions} />
           <Feedbacks feedbacks={feedbacks.slice(0,3)} />
           <Contacts contacts={contacts[0].node} insta={mainInfo.node}/>
-          <ScrollToTop />
 
         </div>
       </Layout>
