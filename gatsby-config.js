@@ -1,4 +1,7 @@
-let contentfulConfig
+let contentfulConfig = {
+  spaceId: "zpmuktnylxb5",
+  accessToken: "M0jGfe-xuI0thrpnsBv5t0mmzcMZzD3AYa4mNr10Esc"
+}
 
 try {
   // Load the Contentful config from the .contentful.json
