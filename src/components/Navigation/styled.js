@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  width: 100%;
+`
+
 export const Navigation = styled.ul`
   display: flex;
   justify-content: space-around;
@@ -9,6 +13,8 @@ export const Navigation = styled.ul`
   height: 20vh;
   max-height: 100px;
   font-size: 1.25em;
+  max-width: 1180px;
+  margin: 0 auto;
 `;
 
 export const NavigationItem = styled.li`

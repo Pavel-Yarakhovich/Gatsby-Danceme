@@ -8,6 +8,8 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 1.8em;
   box-sizing: border-box;
+  max-width: 1180px;
+  margin: 0 auto;
 `;
 
 export const Description = styled.div`

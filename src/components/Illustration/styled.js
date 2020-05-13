@@ -2,9 +2,17 @@ import styled from "styled-components";
 import Img from "gatsby-image";
 import Bg from "../../images/men_catalog_bg.jpg";
 
-export const Illustration = styled.div`
+export const Wrapper = styled.div`
+  width: 100%;
   background: linear-gradient(135deg, transparent, rgba(77, 0, 122, .7) 30%, rgb(77, 0, 122)), linear-gradient( transparent, rgb(77, 0, 122)), url(${Bg}) no-repeat;
-  background-size: contain;
+  background-size: auto;
+
+  @media (max-width: 810px) {
+    background-size: contain;
+  }
+`
+
+export const Illustration = styled.div`
   color: #fff;
   text-align: center;
   display: flex;
@@ -13,6 +21,8 @@ export const Illustration = styled.div`
   justify-content: space-between;
   padding: 1.8em;
   box-sizing: border-box;
+  max-width: 1180px;
+  margin: 0 auto;
 
   @media (max-width: 550px) {
     padding: 1em;

@@ -1,9 +1,19 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  width: 100%;
+  background: linear-gradient(110deg, black, rgb(77, 0, 122) 60%, purple);
+`;
+
+export const Container = styled.div`
+  width: calc(100% - 10vmin);
+  max-width: 1180px;
+  margin: 0 auto;
+`;
+
 export const Footer = styled.div`
   display: flex;
   align-items: center;
-  background: linear-gradient(110deg, black, rgb(77, 0, 122) 60%, purple);
   padding: 10px 25px;
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +22,7 @@ export const Footer = styled.div`
   font-size: 1.1em;
   color: white;
   font-weight: 400;
-  letter-spacing: .06em;
+  letter-spacing: 0.06em;
 `;
 
 export const HeaderUnderline = styled.div`
@@ -26,4 +36,3 @@ export const HeaderUnderline = styled.div`
   );
   margin-top: auto;
 `;
-

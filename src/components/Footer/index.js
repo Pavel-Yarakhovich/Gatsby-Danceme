@@ -1,13 +1,15 @@
 import React from "react";
-import { Footer, HeaderUnderline } from "./styled";
+import { Wrapper, Container, Footer, HeaderUnderline } from "./styled";
 
 class FooterComponent extends React.Component {
   render() {
     return (
-      <>
-        <HeaderUnderline />
-        <Footer>DanceMe Minsk, 2020</Footer>
-      </>
+      <Wrapper>
+        <Container>
+          <HeaderUnderline />
+          <Footer>DanceMe Minsk, 2020</Footer>
+        </Container>
+      </Wrapper>
     );
   }
 }

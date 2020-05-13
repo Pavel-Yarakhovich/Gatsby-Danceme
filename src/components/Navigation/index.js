@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Navigation, NavigationItem } from "./styled";
+import { Wrapper, Navigation, NavigationItem } from "./styled";
 
 export default ({ routes }) => (
+  <Wrapper>
   <nav role="navigation">
     <Navigation>
       {routes.map((route) => {
@@ -14,4 +15,5 @@ export default ({ routes }) => (
       })}
     </Navigation>
   </nav>
+  </Wrapper>
 );
