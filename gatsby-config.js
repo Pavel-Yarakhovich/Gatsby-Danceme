@@ -1,6 +1,6 @@
 let contentfulConfig = {
-  spaceId: "zpmuktnylxb5",
-  accessToken: "M0jGfe-xuI0thrpnsBv5t0mmzcMZzD3AYa4mNr10Esc"
+  spaceId: "acyektvmho9o",
+  accessToken: "zC-A-IjCyb8r2xSWSWT9YFoSBgkyKgX7mo_cpXHPopQ"
 }
 
 try {

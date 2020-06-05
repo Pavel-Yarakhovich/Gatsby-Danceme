@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "BeauSans";
+  font-family: "Vouger";
   font-weight: 400;
   font-style: normal;
-  src: url("/PFBeauSansPro.woff2") format("woff2");
+  src: url("/Vouger.ttf") format("ttf");
   font-display: swap;
 }
 
@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "BeauSans", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: 'Lora', serif;
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;

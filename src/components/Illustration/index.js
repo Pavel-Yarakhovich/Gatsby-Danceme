@@ -1,17 +1,16 @@
 import React from "react";
-// import Img from 'gatsby-image'
-import { Wrapper, Illustration, Title, Motto, Image } from "./styled";
+import { Wrapper, Illustration, Title, Motto } from "./styled";
 
-export default ({ data }) => (
+export default () => (
   <Wrapper>
     <Illustration>
-      <Title>{data.title}</Title>
-      <Image
-        // className={styles.heroImage}
-        alt={data.title}
-        fluid={data.logo.fluid}
-      />
-      <Motto>{data.motto}</Motto>
+      <Motto>
+        Управление по образованию, спорту и туризму Пуховичского райисполкома
+      </Motto>
+      <Title>
+        Государственное учреждение образования <br />"Озеричинский
+        учебно-педагогический комплекс детский сад-базовая школа"
+      </Title>
     </Illustration>
   </Wrapper>
 );

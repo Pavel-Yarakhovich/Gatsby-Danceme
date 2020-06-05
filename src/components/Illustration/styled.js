@@ -1,18 +1,28 @@
 import styled from "styled-components";
 import Img from "gatsby-image";
-import Bg from "../../images/men_catalog_bg.jpg";
+import HeaderBg from "../../images/header_picture.jpg";
 
 export const Wrapper = styled.div`
   width: 100%;
-  background: linear-gradient(135deg, transparent, rgba(77, 0, 122, .7) 30%, rgb(77, 0, 122)), linear-gradient( transparent, rgb(77, 0, 122)), url(${Bg}) no-repeat;
-  background-size: auto;
+  background: url(${HeaderBg}) no-repeat center center;
+  background-size: cover;
+  position: relative;
 
-  @media (max-width: 810px) {
-    background-size: contain;
+  :after {
+    position: absolute;
+    z-index: 1;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .3);
   }
 `
 
 export const Illustration = styled.div`
+position: relative;
+z-index: 2;
   color: #fff;
   text-align: center;
   display: flex;
@@ -23,6 +33,7 @@ export const Illustration = styled.div`
   box-sizing: border-box;
   max-width: 1180px;
   margin: 0 auto;
+  background-color: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, .6) 90%, transparent); 
 
   @media (max-width: 550px) {
     padding: 1em;
@@ -31,27 +42,28 @@ export const Illustration = styled.div`
 
 export const Title = styled.h2`
   margin: .4em 0;
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 600;
   line-height: 1;
-  color: white;
+  color: #303C6D;
 
   @media (max-width: 550px) {
     align-self: center;
-    font-size: 3em;
+    font-size: 2em;
   }
 `;
 
 export const Motto = styled.p`
   margin: .4em 0;
   font-family: Marck;
-  font-size: 2.4em;
+  font-size: 1.4em;
+  line-height: 1.14;
   font-weight: 300;
   letter-spacing: 0.02em;
+  color: #303C6D;
 
   @media (max-width: 550px) {
     align-self: center;
-    font-size: 1.6em;
   }
 `;
 
